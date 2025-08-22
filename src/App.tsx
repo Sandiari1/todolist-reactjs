@@ -1,38 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Irgi </h1>
-      <p> </p>
+    <div className="app-container">
+      
+      <header className="header">
+        <h1>🚀 Belajar React</h1>
 
+      </header>
+     <section className="hero">
+        <div className="hero-text">
+          <h2>Belajar React + Vite </h2>
+
+        </div>
+      </section>
+
+      
       <div className="card">
+        <h2>Counter</h2>
+        <p>Kamu sudah klik {count} kali</p>
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-          
+          Klik Saya
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+     
+      <footer className="footer">
+        © {new Date().getFullYear()} 
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
