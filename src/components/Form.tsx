@@ -1,7 +1,4 @@
-import { useRef } from "react";
-import type { RefObject } from "react";
 import type { Task } from "../types";
-
 
 type FormProps = {
   addTask: (event: React.FormEvent<HTMLButtonElement>) => void;
