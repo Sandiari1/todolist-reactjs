@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import Form from "./components/form"
+import Form from "./components/Form";
 import ToDoList from "./components/ToDoList";
-""
+
 type Task = {
   id: number;
   task: string;
